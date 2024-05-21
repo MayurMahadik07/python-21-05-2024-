@@ -1,0 +1,14 @@
+n = 10
+m = 100
+
+divisible_by_nine = []
+for i in range(n, m + 1):
+    if i % 9 == 0:
+        divisible_by_nine.append(i)
+
+sum_divisible_by_nine = 0
+for number in divisible_by_nine:
+    sum_divisible_by_nine += number
+
+print(divisible_by_nine)
+print(sum_divisible_by_nine)

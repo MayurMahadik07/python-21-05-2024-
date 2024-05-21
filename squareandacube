@@ -1,0 +1,13 @@
+n = int(input("Enter a number: "))
+
+if n <= 0:
+    print("Invalid input")
+else:
+    results = []
+    i = 1
+    while len(results) < n:
+        number = i ** 6
+        results.append(number)
+        i += 1
+    
+    print(results[n - 1])

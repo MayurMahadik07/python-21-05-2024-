@@ -1,0 +1,11 @@
+n, k = map(int, input("Enter two numbers n and k: ").split())
+
+count = 0
+num = 1
+
+while count < n:
+    if 'k' in str(num) or num % k == 0:
+        count += 1
+    num += 1
+
+print(num - 1)

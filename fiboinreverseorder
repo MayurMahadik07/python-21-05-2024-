@@ -1,0 +1,11 @@
+n = int(input("Enter any number: "))
+
+if n < 0:
+    print("Invalid input")
+else:
+    fibonacci = [0, 1]
+    while len(fibonacci) < n:
+        fibonacci.append(fibonacci[-1] + fibonacci[-2])
+
+    for i in range(n - 1, -1, -1):
+        print(fibonacci[i], end=' ')
